@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+//////////////////// Universal /////////////////////
+
+$font-family-sans-serif: "Inter", sans-serif;
+
+$primary: #9D9D9D;
+
+
+@mixin Ccontainer {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+@mixin Linecontainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    // border-bottom: 2px solid rgb(255, 0, 0);
+
+}
+
+@mixin LineMsgcontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+
+.footer {
+    min-height: 250px;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    padding-bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+//////////////////// Universal /////////////////////
+
+
+//////////////////// Fonts /////////////////////
+
+
+
+a:link {
+    color: black;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+
+
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem,
+    7: 2rem,
+    8: 1.5rem,
+    9: 1.25rem,
+    10: 8rem
+);
+
+
+
+
+
+
+//////////////////// Fonts /////////////////////
+
+
+
+
+
+
+
+
+
+
+//////////////////// Index containers /////////////////////
+
+
+.CLUContainer {
+    @include Linecontainer;
+    display: block;
+    margin-top: 570px;
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 93%;
+
+
+}
+
+.pic {
+    position: relative;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+
+
+.aboutUs {
+    max-height: 1000px;
+    border-bottom: 10px solid rgb(0, 0, 0);
+
+
+    .AboutLine {
+        @include Linecontainer;
+        width: 93%;
+        max-height: 20px;
+        padding-top: 0px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+
+
+    }
+}
+
+
+.CLULineMsgcontainer {
+    @include LineMsgcontainer;
+    width: 93%;
+}
+
+
+
+//////////////////// Index containers /////////////////////
+
+//////////////////// Courses containers /////////////////////
+
+
+img.Ccontainer {
+    padding-top: 50px;
+}
+
+.Ccontainer {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .Ccontainer {
+        padding-top: 4%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Ccontainer {
+        padding-top: 3%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    .Ccontainer {
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-bottom: 1%;
+    }
+}
+
+.longVid {
+    position: relative;
+
+
+    video {
+
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+//nav
+.imgContainer img {
+
+    height: 30px;
+    width: 40px;
+}
+
+.Linecontainer {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+ 
+
+}
+
+.LineMsgcontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 80px;
+
+}
+
+
+.Vidcontainer {
+    padding-bottom: 200px;
+
+    @media (max-width: 1590px) {
+        padding-bottom: 100px;
+    }
+
+   
+}
+
+.Vid video {
+    max-width: 649px;
+    min-height: 830px;
+
+    @media (max-width: 1700px) {
+        max-width: 100%;
+        max-height: 400px;
+    }
+}
+
+.Vid {
+
+    @media (max-width: 1700px) {
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 2rem;
+    }
+}
+
+.cuddle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    gap: 200px;
+
+    @media (max-width: 1700px) {
+        margin-top: 70px;
+        display: block;
+    }
+
+
+}
+
+
+.Mscontainer{
+margin-left: 80px;
+margin-bottom: 100px;
+}
+
+
+
+
+//////////////////// Courses containers /////////////////////
+
+//////////////////// Lectures containers /////////////////////
+
+
+
+
+
+.Lcontainer {
+    @include Ccontainer;
+    min-width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling globally */
+    padding-bottom: 0%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+}
+
+
+//////////////////// Lectures containers /////////////////////
+
+
+//////////////////// Unityhub Sneak Peek containers /////////////////////
+
+.pic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+
+.TSPLinecontainer
+{
+    @include Linecontainer;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    width: 92%;
+
+}
+.SPLinecontainer{
+    @include Linecontainer;
+    width: 92%;
+}
+
+.SPLineMsgcontainer{
+@include LineMsgcontainer;
+width: 92%;
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////// Unityhub Sneak Peek containers /////////////////////
+@import "~bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
